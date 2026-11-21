@@ -62,6 +62,7 @@
 #![allow(clippy::neg_cmp_op_on_partial_ord)]
 
 mod chart;
+mod corner_tail;
 mod flat;
 mod fold;
 pub mod hermite;
@@ -72,6 +73,7 @@ mod rigid;
 mod seg;
 mod sheet;
 
+pub use corner_tail::{retarget_corner_tail, set_back_past};
 pub use flat::{Development, EdgeFrom, FlatPanel, Mismatch, Trim, Zone};
 pub use fold::{fold, Bent, Fold};
 pub use layout::{crossings, curve_through, develop};

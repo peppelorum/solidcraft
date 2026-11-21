@@ -19,7 +19,7 @@
 #![deny(clippy::unwrap_used, clippy::expect_used, clippy::panic, clippy::unimplemented, clippy::todo, clippy::unreachable)]
 #![forbid(unsafe_code)]
 
-pub use solidcore_ops::develop::{Bent, Fold, crossings, curve_through, hermite};
+pub use solidcore_ops::develop::{Bent, Fold, crossings, curve_through, hermite, retarget_corner_tail, set_back_past};
 pub use solidcore_ops::query::Query;
 pub use solidcore_record::develop::{
     Anchor, Bend, Corner, CornerRelief, Cut, Datum, Development, EdgeFrom, FlatPanel, Joint, JointKind, Lap, Mismatch, Panel, Relief, Rigid2, Rigid3,
